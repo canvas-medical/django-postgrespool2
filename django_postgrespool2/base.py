@@ -4,7 +4,12 @@ from functools import partial
 from importlib import import_module
 
 from django.conf import settings
+
+# Psycopg2 imports to handle changes made on Django 4.2
 import psycopg2
+import psycopg2.extensions
+import psycopg2.extras
+
 from django.db.backends.postgresql.base import (
     Database,
     DatabaseWrapper as Psycopg2DatabaseWrapper,
