@@ -4,8 +4,8 @@ from functools import partial
 from importlib import import_module
 
 from django.conf import settings
+import psycopg2
 from django.db.backends.postgresql.base import (
-    psycopg2,
     Database,
     DatabaseWrapper as Psycopg2DatabaseWrapper,
 )
